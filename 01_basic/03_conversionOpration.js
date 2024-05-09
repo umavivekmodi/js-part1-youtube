@@ -16,7 +16,15 @@
 //"33abc" => NaN
 //true = 1; false=> 0
 
- let IsLoggedIn= 1    //"33"
+ /*let IsLoggedIn= 1    //"33"
 let booleanIsLoggedIn = Boolean(IsloggedIn)
-console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);*/
 // 03_conversionOpration.js
+
+
+
+let Number = 33
+let stringNumber = string(Number)
+
+console.log(stringNumber);
+console.log( typeof stringNumber);
