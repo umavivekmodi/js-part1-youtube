@@ -26,8 +26,36 @@ const heros = [ "shaktiman","naagraj", "doga"];
 }
 
  const myFuncation = funcation ( ) {
- console.log( "hello world");
+//  console.log( "hello world");
  }
 
 
  console.log( typeof outsideTemp);
+
+
+
+ //  +++++++++++++++++++++++++++ MEMORY+++++++++++++++++++++++++++++++++++++++++
+
+// Stack(primitive)  = variable declear kiya h uski copy milti h, 
+// Heap (Non- primitive)= original value ka  reference means wo original value me change hoga
+
+let myYouTubeName = "vivekmodidotcom"
+
+let anotherName = myYouTubeName
+anothername = "uvcode"
+
+console.log(anotherName);
+console.log(myYouTubeName);
+
+let userone = {
+    email: "user@google.com"
+    UPI : "user@ybl"
+}
+
+let userTwo= userone
+ 
+ userTwo.email = "umesh@gmail.com"
+
+ console.log(userone.email);
+ console.log(userTwo.email);
+
