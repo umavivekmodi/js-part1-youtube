@@ -33,6 +33,12 @@ console.log(newDate.getDay());
 // console.log(`${newDate.getDate() $ {myTimeStamp.getTime()}`);  error
 
 
+newDate.toLocaleString('default',
+ {
+    weekday:"long",
+    timeZone:""
+ })
+
 
 
 
