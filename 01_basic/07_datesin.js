@@ -6,7 +6,7 @@ let myDate = new Date()
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toLocaleString());
-// console.log(typeOf myDate);          error
+console.log(typeof myDate);          
 // let myCreatedDate =  new Date(2024,0,24)
 // console.log(myCreatedDate.toDateString());
 
@@ -22,22 +22,22 @@ let myDate = new Date()
 
 
 
-let myTimeStamp =Date.now();
-// console.log(myTimeStamp);
-// console.log(Math.floor(Date.now()/1000));
+// let myTimeStamp =Date.now();
+// // console.log(myTimeStamp);
+// // console.log(Math.floor(Date.now()/1000));
 
-let newDate = new Date()
+// let newDate = new Date()
 
-console.log(newDate.getMonth()+1);
-console.log(newDate.getDay());
-// console.log(`${newDate.getDate() $ {myTimeStamp.getTime()}`);  error
+// console.log(newDate.getMonth()+1);
+// console.log(newDate.getDay());
+// // console.log(`${newDate.getDate() $ {myTimeStamp.getTime()}`);  error
 
 
-newDate.toLocaleString('default',
- {
-    weekday:"long",
-    timeZone:""
- })
+// newDate.toLocaleString('default',
+//  {
+//     weekday:"long",
+//     timeZone:""
+//  })
 
 
 
