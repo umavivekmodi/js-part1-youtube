@@ -7,7 +7,7 @@
 // hexaUser.name ="sammy"                                   //l
 // hexaUser.isLoggrdIn= false                               //s
 
-// console.log(hexauserUser);                               //e
+// console.log(hexaUser);                               //e
 
 const tinderUser = {}
 tinderUser.id = "123abc"

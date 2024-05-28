@@ -23,4 +23,4 @@ function addTwoNumbers(number1 , number2)   // when function is define its a =>p
 
 // console.log("Result:" , result);
 
-function loginusermassage (userName)
+// function loginusermassage (userName)
