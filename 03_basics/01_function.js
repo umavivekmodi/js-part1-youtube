@@ -28,7 +28,7 @@ function loginusermassage (userName = "vivek"){
         if(!userName)
 
                 {
-                console.log("please enter a userName");
+                // console.log("please enter a userName");
                 return
 }
 return`${userName} just logged in`
@@ -36,7 +36,33 @@ return`${userName} just logged in`
 // console.log(loginusermassage("hitesh"))
 // console.log(loginusermassage(""))
 // console.log(loginusermassage())
-console.log(loginusermassage("uma"))
+// console.log(loginusermassage("uma"))
+
+
+function calculateCartPrize(val1,val2, ...num1){  // rest operator or spread operator here its works like a rest operator
+        return num1
+}
+//  console.log(calculateCartPrize(200,400,500, 2000))
+const user ={
+        username : "hitesh",
+        prize :199
+}
+function handleObjct(anyObject){
+        console.log(`user name is ${anyObject.username} and prize is ${anyObject.prize}`)
+
+}
+handleObjct(user)
+handleObjct ({
+        username:"vivek",
+        prize : 399
+})
+
+const myNewArray = [200,400,100,600]
+function returnSecondValue(getArray){
+        return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,500,1000]));
 
 
 
