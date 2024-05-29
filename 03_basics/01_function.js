@@ -23,4 +23,21 @@ function addTwoNumbers(number1 , number2)   // when function is define its a =>p
 
 // console.log("Result:" , result);
 
-// function loginusermassage (userName)
+function loginusermassage (userName = "vivek"){
+        // if(userName===undefined)
+        if(!userName)
+
+                {
+                console.log("please enter a userName");
+                return
+}
+return`${userName} just logged in`
+}
+// console.log(loginusermassage("hitesh"))
+// console.log(loginusermassage(""))
+// console.log(loginusermassage())
+console.log(loginusermassage("uma"))
+
+
+
+
