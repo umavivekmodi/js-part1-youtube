@@ -5,15 +5,17 @@
 // }
 // chai()
 
-(function chai(){
+(function chai(){     //named IIFE
     console.log(`DB CONNECTED`);
 })();  //some time globle scope created problems and to remove globle scope polutation we use => IIFE
 //WHEN WE USE ARROW FUNCTION
 
-( () =>  {
-   console.log(`DB CONNECTED TWO`);
-})();
+((name) => {                        //UNnameIIFE
+   console.log(`DB CONNECTED TWO ${name}`);
+})('vivekModi');
 
 ( function aurcode() {
     console.log(`DB CONNECTED THREE`);
  })()
+
+ 
