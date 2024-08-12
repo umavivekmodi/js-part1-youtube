@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML events</title>
+</head>
+<body style="background-color: #414141;color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200" id="ocean"  src="https://images.pexels.com/photos/16921155/pexels-photo-16921155/free-photo-of-shiny-water-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="beachsite" ></li>
+            <li><img width="200" id="happyGirl" src="https://images.pexels.com/photos/18930654/pexels-photo-18930654/free-photo-of-smiling-girl-making-bubbles.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img width="200" id="breakfast" src="https://images.pexels.com/photos/9336722/pexels-photo-9336722.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""
+               
+                 ></li>
+            <li><img width="200" id="happiness" src="https://images.pexels.com/photos/27504493/pexels-photo-27504493/free-photo-of-elderly-couple-walking-on-field.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img width="200" id="food" src="https://images.pexels.com/photos/27363857/pexels-photo-27363857/free-photo-of-top-view-of-a-pie-with-berries.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img width="200" id="underWaterDive" src="https://images.pexels.com/photos/15763644/pexels-photo-15763644/free-photo-of-scuba-divers-in-masks-snorkeling-underwater.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            <li><img width="200" id="horseRide" src="https://images.pexels.com/photos/27240583/pexels-photo-27240583/free-photo-of-a-man-riding-a-horse-in-the-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></li>
+            
+            <li><a style="color: aliceblue;" href="https://www.google.com" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>    
+// document.getElementById('breakfast').onclick = function(){
+//     alert("breakfast clicked")
+// }
+ 
+                //  onclick="alert('brakfast')"  iska bhi use alt=" " ke baad kr skte hai 
+//attachEvent()
+// jQuery - .on     isse phle inka bhi use hota tha
+
+// type events ,timestamp,defaultprevented,target,toelement, srcelement, currentTarget,
+// clint position relater like clintX, clintY, screenX,screnY
+//alt key ,ctrl key,shift key, keycode  make keybord speed masurement when we give text its properly worked or not?
+// document.getElementById('images').addEventListener('click',function(e){
+//     // alert("breakfast clicked again")
+//     console.log("click inside the ul");
+// } ,false)
+// // bubbling click event down to top happend hote hai  using ==flase 
+// //capturing mode click event top to bottom happened hot hai using == true
+
+// document.getElementById('breakfast').addEventListener('click',function(e){
+//     // alert("breakfast clicked again")
+//     console.log("breakfast clicked");
+//     e.stopPropagation()
+//     } ,false) 
+//     document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     e.stopImmediatePropagation();
+//     console.log('google clicked');
+//     },false)
+
+document.querySelector('#images').addEventListener('click',function(e){
+// console.log(e);
+// console.log(e.target);
+// console.log(e.target.parentNode);
+console.log(e.target.tagName);
+
+if (e.target.tagName === 'IMG') {
+    console.log(e.target.id);
+    let removeIt = e.target,parentNode;
+removeIt.remove()
+}
+
+// removeIt.parentNode.removeChild(removeIt)
+},false)
+</script>
+</html>
